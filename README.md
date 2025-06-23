@@ -1,86 +1,159 @@
-# LibraryDocumentation-ShadowFox
-# 📊 Data Visualization in Python
+<h1 align="center">📊 Data Visualization & Analysis with Python</h1>
 
-Welcome to this repository on **Data Visualization** using Python’s most popular libraries — **Matplotlib** and **Seaborn**!  
-This guide walks through the core charts and use cases, perfect for beginners, data analysts, or anyone creating impactful visual reports.
-
----
-
-## 📌 Contents
-
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Libraries Used](#libraries-used)
-- [Sample Dataset](#sample-dataset)
-- [Plot Types](#plot-types)
-- [Gallery](#gallery)
-- [Conclusion](#conclusion)
+<p align="center">
+  <img src="https://img.shields.io/badge/Level-Beginner_to_Advanced-success?style=flat-square" />
+  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" />
+  <img src="https://img.shields.io/badge/Libraries-Pandas%2C%20Matplotlib%2C%20Seaborn%2C%20Sklearn-informational" />
+</p>
 
 ---
 
-## 🧠 Introduction
-
-Data visualization is essential for making sense of large datasets. Python offers flexible tools to turn raw data into beautiful, insightful charts.
-
-This repo includes:
-- Code examples for **line**, **bar**, **pie**, **scatter**, **histogram**, **box**, **heatmap**, and **multi-line** plots.
-- Side-by-side usage of Matplotlib (for precision) and Seaborn (for elegance).
+## 🧭 Table of Contents
+- [🌟 Overview](#-overview)
+- [📁 Project Structure](#-project-structure)
+- [🟢 Beginner: ShadowFox Visualization Guide](libraryDocumentation.ipynb)
+- [🟡 Intermediate: Delhi AQI Analysis](Air_Quality_Analysis.ipynbs)
+- [🔴 Advanced: Cricket Fielding Performance](T20_Cricket_Perforance_Analysis.ipynb)
+- [🛠️ Setup & Installation](#️-setup--installation)
+- [📌 Future Enhancements](#-future-enhancements)
+- [🙌 Credits](#-credits)
 
 ---
 
-## ⚙️ Installation
+## 🌟 Overview
+
+This repository is a **complete showcase of data storytelling using Python**. From mastering plots, to real-world air pollution data analysis, to match-by-match cricket fielding breakdowns — it's all here.
+
+🎓 Ideal for:
+- Students building projects  
+- Analysts enhancing reports  
+- Developers learning data visualization  
+- Sports or environment enthusiasts
+
+---
+
+## 📁 Project Structure
+
+📂 Python-Visualization-Projects/
+├── Beginner-ShadowFox/
+│ └── shadowfox_visuals.ipynb
+├── Intermediate-DelhiAQI/
+│ ├── delhi_aqi.csv
+│ └── delhi_air_quality_analysis.ipynb
+├── Advanced-CricketFielding/
+│ ├── fielding_data.csv
+│ └── cricket_fielding_analysis.ipynb
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## 🟢 Beginner: ShadowFox Visualization Guide
+
+📘 **Project Goal:** Master data visualization using **Matplotlib** and **Seaborn**
+
+### 💡 Features:
+- Side-by-side usage of `matplotlib` vs `seaborn`
+- Charts included: Line, Bar, Pie, Scatter, Histogram, Boxplot, Heatmap, KDE
+- Clean layout, reusable templates, and plotting tips
+
+### 🎯 Ideal For:
+- Newcomers to Python visualization
+- Those making dashboards, reports, or Jupyter visuals
+
+### 🖼️ Gallery Snippet:
+✅ Line Plot | ✅ Pie Chart | ✅ KDE + Histogram
+✅ Heatmap | ✅ Multi-line Comparison | ✅ Box Plot
+
+yaml
+Copy
+Edit
+
+---
+
+## 🟡 Intermediate: Delhi AQI Analysis
+
+🌆 **Project Goal:** Explore, visualize, and model Delhi's air quality using pollutant data
+
+### 🔬 Analysis Flow:
+1. Data cleaning: dates, nulls, seasons
+2. EDA: seasonal pollutant boxplots, correlation heatmap
+3. ML Modeling:
+   - 🔹 Linear Regression
+   - 🔹 Random Forest Regression
+4. 🎯 Target: Predict PM2.5 with feature importance
+
+### 📊 Visual Output:
+- PM2.5 & NO₂ seasonal boxplots  
+- Pollutant correlation matrix  
+- Random Forest feature importance
+
+### 📂 Output Files:
+- `seasonal_averages.csv`  
+- `regression_results.txt`  
+- Graphs in `/output/graphs/`
+
+---
+
+## 🔴 Advanced: Cricket Fielding Performance
+
+🏏 **Project Goal:** Analyze player-level fielding performance from a real T20 innings
+
+### 📋 Dataset:
+- `Player`, `Position`, `Pick`, `Throw`, `Runs` (saved/conceded)
+
+### 📈 Metrics Calculated:
+- ✅ Fielding Score per player
+- ✅ Pick & Throw accuracy rates
+- ✅ Runs saved vs conceded
+- ✅ Player Efficiency Score
+- ✅ Fielding Hotspot Map
+
+### 🔥 Visuals Generated:
+- Bar charts (fielding score)
+- Heatmap (Pick vs Throw)
+- Position activity map
+- Radar chart (multi-metric for 3 players)
+
+### 🧠 Objective:
+Help coaches **identify top fielders** and optimize **on-field placements** using data.
+
+---
+
+## 🛠️ Setup & Installation
+
+Make sure you have Python 3.10+ and the following libraries:
 
 ```bash
-pip install matplotlib seaborn pandas numpy
+pip install pandas matplotlib seaborn scikit-learn tabulate numpy
+To run:
 
+Launch Jupyter Notebook or Google Colab
 
-📚 Libraries Used
-Library	Purpose
-matplotlib	Low-level plotting library
-seaborn	Statistical data visualization
-pandas	Data manipulation and analysis
-numpy	Numerical operations
+Open any .ipynb file and follow the markdown cells
 
+📌 Future Enhancements
+ Streamlit Dashboard for all projects
 
-📈 Plot Types
-📊 Chart Type	📌 Best Use Case
-Line Plot	Trends over time
-Bar Chart	Category comparison
-Pie Chart	Proportional distributions
-Scatter Plot	Correlation & clustering
-Histogram	Distribution shape & spread
-Box Plot	Quartile distribution, outliers
-Heatmap	Matrix-style intensity (e.g., corr)
-Multi-Line Plot	Comparing multiple trend lines
+ Geo-visualization using folium for AQI
 
-🖼️ Gallery Preview
+ Cricket radial field heatmap
 
-✅ Line Plot
+ Live data pipeline for AQI using APIs
 
-✅ Bar Chart
+ Clustering-based pollution hotspot detection
 
-✅ Pie Chart
+🙌 Credits
+Developer: Sriharsha Amma
+Tech Used: Python, Pandas, Matplotlib, Seaborn, Scikit-learn
+Data Sources:
 
-✅ Scatter Plot
+AQI Data: CPCB, Kaggle
 
-✅ Histogram with KDE
+Fielding Data: Custom-recorded (ball-by-ball)
 
-✅ Box Plot
-
-✅ Heatmap
-
-✅ Multi-Line Plot
-
-All plots are customizable and built for reuse.
-
-
-🎯 Conclusion
-With just a few lines of Python code, you can build powerful visualizations. Whether you're a:
-
-Student working on projects,
-
-Data scientist building dashboards, or
-
-Developer visualizing logs or metrics,
-
+Visual Template: Custom-created for ShadowFox
 
